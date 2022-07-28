@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.container {
+  height: 100vh;
+  width: 800vw;
+  background-image: url("https://static.vecteezy.com/system/resources/thumbnails/003/417/424/small_2x/hill-station-view-vector.jpg");
+  background-repeat: repeat-x;
+
+}
+
+.road {
+  height: 42vh;
+  width: 800vw;
+  background-image: url(./images/road.jpg);
+  position: absolute;
+  top: 58vh;
+  animation: road 0.3s linear infinite;
+}
+
+.car {
+  height: 110px;
+  width: 297px;
+  background-image: url(./images/car.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 50vh;
+  left: -22vw;
+  animation: carupdown 4s linear infinite;
+
+}
+
+.wheel1 img {
+  width: 42px;
+  position: absolute;
+  top: 7.9vh;
+  left: 3.9vw;
+  animation: move 0.2s linear infinite;
+}
+
+.wheel2 img {
+  width: 44px;
+  position: absolute;
+  left: 15.9vw;
+  top: 8vh;
+  animation: move 0.2s linear infinite;
+
+}
+
+/* Animation */
+@keyframes move {
+  100%
+  {
+    transform: rotate(360deg);
+  }
+}
+@keyframes carupdown {
+  0%
+  {
+    transform: translateX(0px);
+  }
+  100%
+  {
+    transform: translateX(1750px);
+
+  }
+}
+@keyframes road {
+  100%
+  {
+    transform: translatex(-100px);
+  }
+}
